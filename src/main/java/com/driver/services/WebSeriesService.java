@@ -51,10 +51,11 @@ public class WebSeriesService {
         series.setProductionHouse(productionHouse);
 
 
-       ProductionHouse saved =  productionHouseRepository.save(productionHouse);
+         productionHouseRepository.save(productionHouse);
 
+        WebSeries updatedWebSeries = webSeriesRepository.save(series);
 
-        return saved.getWebSeriesList().get(saved.getWebSeriesList().size()-1).getId();
+        return updatedWebSeries.getId();
 
 
     }
