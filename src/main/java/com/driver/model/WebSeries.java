@@ -25,7 +25,8 @@ public class WebSeries {
 
     private double rating;
 
-    private SubscriptionType subscriptionType; //This denotes with which of subscriptionType this webseries comes ie. BASIC,PRO, ELITE
+    private SubscriptionType subscriptionType;
+    //This denotes with which of subscriptionType this webseries comes ie. BASIC,PRO, ELITE
 
     @ManyToOne
     @JoinColumn
